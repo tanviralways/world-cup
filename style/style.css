@@ -15,7 +15,7 @@ main {
 .container {
   width: 1250px;
   /* height: 100%; */
-  background-color: #161616;
+  background-color: rgb(7, 7, 72);
   border-radius: 10px;
   margin-bottom: 70px;
 }
@@ -35,7 +35,7 @@ main {
 }
 .banner a {
   text-decoration: none;
-  background-color: #dd0000;
+  background-color: green;
   color: #fff;
   font-size: 20px;
   padding: 10px 16px;
@@ -43,14 +43,14 @@ main {
   animation-name: button;
   animation-duration: 5s;
 }
-@keyframes button:hover .banner a {
+/* @keyframes button:hover .banner a {
   from {
     background-color: red;
   }
   to {
     background-color: yellow;
   }
-}
+} */
 
 .description {
   padding: 20px 0 80px 0;
@@ -66,18 +66,13 @@ img.banner-image {
   justify-content: space-between;
   margin-bottom: 10rem;
 }
-/* .container2 {
- display: grid;
- gr
-} */
 
 .menu > nav {
   display: flex;
   flex-direction: column;
-  background-color: #161616;
+  background-color: rgb(7, 7, 72);
   padding: 25px;
   border-radius: 10px;
-  /* width: 198px; */
 }
 .menu > nav > a {
   text-decoration: none;
@@ -95,8 +90,14 @@ img.banner-image {
 }
 .blog {
   color: #fff;
-  background-color: #dd0000;
+  background-color: green;
 }
+.matches {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
 .details {
   border: 1px solid gray;
   border-top: none;
@@ -110,16 +111,13 @@ img.banner-image {
   padding: 2.5px 7px;
   border-radius: 3px;
 }
-.matches {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  /* width: auto; */
+i.far.fa-comment-dots {
+  padding-left: 12px;
 }
 
 /* footer */
 footer {
-  background-color: #161616;
+  background-color: rgb(7, 7, 72);
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -139,7 +137,7 @@ hr {
 
 .icons a {
   font-size: 40px;
-  color: wheat;
+  color: lightgreen;
   margin: 29px;
 }
 
@@ -244,7 +242,7 @@ hr {
   }
   .view-all a {
     text-decoration: none;
-    background-color: #dd0000;
+    background-color: green;
     color: #fff;
     font-size: 20px;
     padding: 10px 16px;
