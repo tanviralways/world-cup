@@ -41,11 +41,15 @@ main {
   padding: 10px 16px;
   border-radius: 5px;
   animation-name: button;
-  animation-duration:5s ;
+  animation-duration: 5s;
 }
-@keyframes button:hover .banner a{
-  from {background-color: red;}
-  to {background-color: yellow;}
+@keyframes button:hover .banner a {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
 }
 
 .description {
@@ -163,7 +167,7 @@ hr {
   font-weight: 600;
   padding: 0 7px;
 }
-.view-all a{
+.view-all a {
   display: none;
 }
 
@@ -179,10 +183,10 @@ hr {
     align-items: center;
     flex-direction: column;
   }
-  .description{
+  .description {
     text-align: center;
   }
-  
+
   .container2 {
     width: 100%;
     flex-direction: column;
@@ -194,16 +198,10 @@ hr {
   .matches {
     grid-template-columns: repeat(1, 1fr);
   }
-  .hidden{
+  .hidden {
     display: none;
   }
-  .footer-discription {
-    flex-direction: column;
-    align-items: center;
-  }
-  hr {
-    width: 15rem;
-  }
+
   .container3 {
     width: 100%;
     flex-direction: column;
@@ -215,37 +213,62 @@ hr {
   .matches-upcoming {
     grid-template-columns: repeat(1, 1fr);
   }
+  .footer-discription {
+    flex-direction: column;
+    align-items: center;
   }
-
+  hr {
+    width: 15rem;
+  }
+}
 
 /* For Tab View */
 @media only screen and (min-width: 689px) and (max-width: 992px) {
-.container{
-  width: 100%;
-}
-.container2 {
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-}
-.menu > nav {
-  flex-direction: row;
-  background-color: #fff;
-}
-.matches {
-  grid-template-columns: repeat(2, 1fr);
-}
-.hidden{
-  display: none;
-}
-.view-all a{
-  text-decoration: none;
-  background-color: #dd0000;
-  color: #fff;
-  font-size: 20px;
-  padding: 10px 16px;
-  border-radius: 5px;
-  display: block;
-  margin-top: 3rem;
+  .container {
+    width: 100%;
+  }
+  .container2 {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu > nav {
+    flex-direction: row;
+    background-color: #fff;
+  }
+  .matches {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hidden {
+    display: none;
+  }
+  .view-all a {
+    text-decoration: none;
+    background-color: #dd0000;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 16px;
+    border-radius: 5px;
+    display: block;
+    margin-top: 3rem;
+  }
+  /* upcomming-match */
+  .container3 {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu > nav {
+    background-color: #fff;
+  }
+  .matches-upcoming {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-discription {
+    flex-direction: column;
+    align-items: center;
+  }
+  hr {
+    width: 40rem;
+  }
 
-}
