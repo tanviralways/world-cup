@@ -10,10 +10,11 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 .container {
   width: 1250px;
-  height: 100%;
+  /* height: 100%; */
   background-color: #161616;
   border-radius: 10px;
   margin-bottom: 70px;
@@ -39,6 +40,12 @@ main {
   font-size: 20px;
   padding: 10px 16px;
   border-radius: 5px;
+  animation-name: button;
+  animation-duration:5s ;
+}
+@keyframes button:hover .banner a{
+  from {background-color: red;}
+  to {background-color: yellow;}
 }
 
 .description {
@@ -132,20 +139,20 @@ hr {
   margin: 29px;
 }
 
-/* blog html file */
+/* upcoming html file */
 .container3 {
   width: 1250px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 10rem;
 }
-.matches-blog {
+.matches-upcoming {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
 }
 
-.match-blog {
+.match-upcoming {
   border: 1px solid gray;
   border-radius: 10px;
   padding: 42px 38px;
@@ -155,4 +162,90 @@ hr {
   top: -20px;
   font-weight: 600;
   padding: 0 7px;
+}
+.view-all a{
+  display: none;
+}
+
+/* responsive Media Quaries */
+
+/* For mobile view */
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+  .banner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .description{
+    text-align: center;
+  }
+  
+  .container2 {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu > nav {
+    background-color: #fff;
+  }
+  .matches {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .hidden{
+    display: none;
+  }
+  .footer-discription {
+    flex-direction: column;
+    align-items: center;
+  }
+  hr {
+    width: 15rem;
+  }
+  .container3 {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu > nav {
+    background-color: #fff;
+  }
+  .matches-upcoming {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  }
+
+
+/* For Tab View */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+.container{
+  width: 100%;
+}
+.container2 {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.menu > nav {
+  flex-direction: row;
+  background-color: #fff;
+}
+.matches {
+  grid-template-columns: repeat(2, 1fr);
+}
+.hidden{
+  display: none;
+}
+.view-all a{
+  text-decoration: none;
+  background-color: #dd0000;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 16px;
+  border-radius: 5px;
+  display: block;
+  margin-top: 3rem;
+
 }
