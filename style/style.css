@@ -19,11 +19,25 @@ main {
   background-color: rgb(7, 7, 72);
   border-radius: 10px;
   margin-bottom: 70px;
+  overflow: hidden;
 }
 .banner {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 .banner h1 {
   font-size: 40px;
