@@ -1,6 +1,7 @@
 /* google font  */
 @import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@500&display=swap");
 
+/* Common Style */
 body {
   font-family: "Readex Pro", sans-serif;
   margin: 0;
@@ -12,14 +13,13 @@ main {
   align-items: center;
   width: 100%;
 }
+/*Top banner section */
 .container {
   width: 1250px;
-  /* height: 100%; */
   background-color: rgb(7, 7, 72);
   border-radius: 10px;
   margin-bottom: 70px;
 }
-/* banner section */
 .banner {
   display: flex;
   justify-content: space-around;
@@ -43,15 +43,6 @@ main {
   animation-name: button;
   animation-duration: 5s;
 }
-/* @keyframes button:hover .banner a {
-  from {
-    background-color: red;
-  }
-  to {
-    background-color: yellow;
-  }
-} */
-
 .description {
   padding: 20px 0 80px 0;
 }
@@ -59,8 +50,8 @@ img.banner-image {
   height: 400px;
   margin-bottom: -3.7px;
 }
-/* container 2 */
-.container2 {
+/* Blog Section  */
+.contaainer-two {
   width: 1250px;
   display: flex;
   justify-content: space-between;
@@ -141,8 +132,8 @@ hr {
   margin: 29px;
 }
 
-/* upcoming html file */
-.container3 {
+/* upcoming matches which is in another html file */
+.contaainer-three {
   width: 1250px;
   display: flex;
   justify-content: space-between;
@@ -173,6 +164,7 @@ hr {
 
 /* For mobile view */
 @media only screen and (max-width: 688px) {
+  /* Top Banner */
   .container {
     width: 100%;
   }
@@ -184,8 +176,8 @@ hr {
   .description {
     text-align: center;
   }
-
-  .container2 {
+  /* Blog Section */
+  .contaainer-two {
     width: 100%;
     flex-direction: column;
     align-items: center;
@@ -199,8 +191,8 @@ hr {
   .hidden {
     display: none;
   }
-
-  .container3 {
+  /* Upcoming-match Section */
+  .contaainer-three {
     width: 100%;
     flex-direction: column;
     align-items: center;
@@ -211,6 +203,7 @@ hr {
   .matches-upcoming {
     grid-template-columns: repeat(1, 1fr);
   }
+  /* Footer */
   .footer-discription {
     flex-direction: column;
     align-items: center;
@@ -222,10 +215,12 @@ hr {
 
 /* For Tab View */
 @media only screen and (min-width: 689px) and (max-width: 992px) {
+  /* Top banner */
   .container {
     width: 100%;
   }
-  .container2 {
+  /* Blog Section */
+  .contaainer-two {
     width: 100%;
     flex-direction: column;
     align-items: center;
@@ -251,7 +246,7 @@ hr {
     margin-top: 3rem;
   }
   /* upcomming-match */
-  .container3 {
+  .contaainer-three {
     width: 100%;
     flex-direction: column;
     align-items: center;
@@ -262,6 +257,7 @@ hr {
   .matches-upcoming {
     grid-template-columns: repeat(2, 1fr);
   }
+  /* Footer */
   .footer-discription {
     flex-direction: column;
     align-items: center;
